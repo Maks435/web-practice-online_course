@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Gothic+A1&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  scroll-behavior: smooth;
+  --background-color: #191715;
+  --main-text-color: #FFFFFF;
+  --text-accent-color: #e46515;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page {
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
