@@ -1,0 +1,51 @@
+.header-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px 0px 24px;
+  .header-hero__content {
+    .header-hero__tagline {
+      font-family: "Gothic A1", "sans-serif";
+      font-size: 12px;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: var(--second-text-color);
+      .header-hero__tagline-emphasis {
+        color: var(--text-accent-color);
+      }
+    }
+    .header-hero__price {
+      font-family: "Comfortaa", "sans-serif";
+      font-size: 34px;
+      color: var(--text-accent-color);
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-weight: bold;
+      .header-hero__price-old {
+        text-decoration: line-through;
+        color: var(--third-text-color);
+        font-size: 21px;
+      }
+    }
+    .header-hero__title {
+      font-family: "Comfortaa", "sans-serif";
+      font-size: 48px;
+      color: var(--main-text-color);
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-weight: bold;
+      .header-hero__dot {
+        color: var(--text-accent-color);
+      }
+      .header-hero__transform {
+        word-break: break-all;
+      }
+      .header-hero__join {
+        color: var(--text-accent-color);
+      }
+    }
+  }
+}

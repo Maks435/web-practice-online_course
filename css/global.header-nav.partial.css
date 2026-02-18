@@ -10,10 +10,10 @@
   }
 
   .header-nav__menu-button {
-    display: none;
+    display: none; /* Hidden by default, shown on smaller screens */
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Курсор змінюється на «руку» при наведенні */
     padding: 0.5rem;
     position: relative;
     width: 30px;
@@ -25,12 +25,12 @@
       background-color: var(--main-text-color);
       transition: 0.3s;
       position: absolute;
-      left: 0;
-      transform-origin: center;
+      left: 0; /* Прив’язка до лівого краю */
+      transform-origin: center; /* Точка обертання – центр елементу */
     }
   }
 
-  .header-nav__menu-button-line:nth-child(1) {
+  .header-nav__menu-button-line:nth-child(1) { /* Лінії до анімації */
     transform: translateY(-8px);
   }
 
@@ -45,7 +45,6 @@
   .header-nav__menu {
     min-width: 70%;
     display: flex;
-    justify-content: space-between;
     .header-nav__menu-list {
       display: flex;
       gap: 3rem;
@@ -78,19 +77,19 @@
 
   @media (max-width: 1024px) {
     .header-nav__menu-button {
-      display: block;
-      z-index: 101;
+      display: block; /* Кнопка стає видимою на екранах до 1024px */
+      z-index: 101; /* Забезпечує, що кнопка буде над меню */
     }
 
     .header-nav__menu {
-      position: fixed;
+      position: fixed; /* Фіксоване позиціонування для покриття всього екрану */
       top: 5rem;
       left: 0;
       width: 100%;
       height: 0;
       background-color: var(--background-color);
-      overflow: hidden;
-      transition: height 0.3s;
+      overflow: hidden; /* Приховує вміст, коли меню закрите */
+      transition: height 0.3s; /* Плавний перехід висоти при відкритті/закритті меню */
       display: block;
       .header-nav__menu-list {
         display: flex;
@@ -100,22 +99,22 @@
         padding: 1.5rem;
         gap: 1.5rem;
         opacity: 0;
-        transition: opacity 0.3s;
+        transition: opacity 0.3s; /* Плавний перехід непрозорості для появи меню */
         margin: 0 auto;
       }
     }
 
     .header-nav__menu .header-nav__menu-item {
-      margin: 0;
+      margin: 0; 
     }
 
     .header-nav__menu.is-open {
-      height: calc(100vh - 4rem);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: calc(100vh - 4rem); /* Висота меню при відкритті, покриваючи весь екран, крім висоти навігації */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 
     .header-nav__menu.is-open .header-nav__menu-list {
-      opacity: 1;
+      opacity: 1; /* Меню стає видимим при відкритті */
     }
 
     .header-nav__menu-button.is-active
@@ -125,12 +124,12 @@
 
     .header-nav__menu-button.is-active
       .header-nav__menu-button-line:nth-child(2) {
-      opacity: 0;
+      opacity: 0; /* Середня лінія зникає при відкритті меню */
     }
 
     .header-nav__menu-button.is-active
       .header-nav__menu-button-line:nth-child(3) {
-      transform: translateY(0) rotate(-45deg);
+      transform: translateY(0) rotate(-45deg); /
     }
   }
 }

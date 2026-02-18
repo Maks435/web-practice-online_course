@@ -13,6 +13,8 @@
   scroll-behavior: smooth;
   --background-color: #191715;
   --main-text-color: #FFFFFF;
+  --second-text-color: #cacaca;
+  --third-text-color: #ffffffc7;
   --text-accent-color: #e46515;
 }
 
