@@ -75,7 +75,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 810px) {
     .header-nav__menu-button {
       display: block; /* Кнопка стає видимою на екранах до 1024px */
       z-index: 101; /* Забезпечує, що кнопка буде над меню */
@@ -111,6 +111,7 @@
     .header-nav__menu.is-open {
       height: calc(100vh - 4rem); /* Висота меню при відкритті, покриваючи весь екран, крім висоти навігації */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      z-index: 101;
     }
 
     .header-nav__menu.is-open .header-nav__menu-list {

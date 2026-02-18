@@ -27,6 +27,11 @@ img {
   background-color: var(--background-color);
 }
 
+/* when menu opens, prevent body scrolling */
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;

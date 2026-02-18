@@ -1,15 +1,13 @@
 .header-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 24px 0px 24px;
   .header-hero__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 0px 24px;
     .header-hero__tagline {
       font-family: "Gothic A1", "sans-serif";
       font-size: 12px;
-      margin-bottom: 10px;
-      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-top: 70px;
       font-weight: bold;
       letter-spacing: 2px;
       color: var(--second-text-color);
@@ -21,11 +19,11 @@
       font-family: "Comfortaa", "sans-serif";
       font-size: 34px;
       color: var(--text-accent-color);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       margin-top: 30px;
       font-weight: bold;
       .header-hero__price-old {
-        text-decoration: line-through;
+        text-decoration: line-through; /* Закреслення*/
         color: var(--third-text-color);
         font-size: 21px;
       }
@@ -45,6 +43,122 @@
       }
       .header-hero__join {
         color: var(--text-accent-color);
+      }
+    }
+    .header-hero__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 40px;
+      .header-hero__button {
+        background-color: var(--text-accent-color);
+        color: var(--main-text-color);
+        padding: 10px 28px;
+        max-width: 200px;
+        border: none;
+        border-radius: 20px;
+        font-family: "Gothic A1", "sans-serif";
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition:
+          background-color 0.3s,
+          transform 0.2s; /* Плавний перехід для кольору та трансформації */
+      }
+      .header-hero__button:hover,
+      .header-hero__button:focus {
+        background-color: darken(
+          var(--text-accent-color),
+          10%
+        ); /* Темніший відтінок при наведенні */
+        transform: translateY(-2px); /* Легкий підйом при наведенні */
+      }
+      .header-hero__button:active {
+        background-color: darken(var(--text-accent-color), 15%);
+        transform: translateY(0);
+      }
+      .header-hero__link {
+        color: var(--second-text-color);
+        font-family: "Gothic A1", "sans-serif";
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .header-hero__link:hover,
+      .header-hero__link:focus {
+        color: var(--text-accent-color);
+        text-decoration: underline;
+      }
+    }
+    .header-hero__description {
+      font-family: "Comfortaa", "sans-serif";
+      font-size: 24px;
+      color: var(--main-text-color);
+      margin-bottom: 70px;
+      line-height: 35px; /*Встановлює висоту рядка для кращої читабельності*/
+      font-weight: bold;
+      .header-hero__dot {
+        color: var(--text-accent-color);
+      }
+    }
+  }
+  .header-hero__image-wrapper {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    .header-hero__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+  @media (min-width: 375px) {
+    .header-hero__content {
+      .header-hero__actions {
+        flex-direction: row;
+        .header-hero__button {
+          margin-bottom: 50px;
+        }
+        .header-hero__link {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    .header-hero__content {
+      flex: 1;
+      margin: auto;
+      .header-hero__tagline {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+      .header-hero__title {
+        font-size: 58px;
+      }
+    }
+    .header-hero__image-wrapper {
+      flex: 1;
+      height: auto;
+      .header-hero__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .header-hero__content {
+      margin: auto;
+      .header-hero__title {
+        font-size: 62px;
       }
     }
   }

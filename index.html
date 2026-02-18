@@ -24,7 +24,13 @@
         data-hx-get="index.header-hero.partial.html"
       ></div>
     </header>
-    <main></main>
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.modules.partial.html"
+      ></section>
+    </main>
     <script type="module" src="js/index.js"></script>
   </body>
 </html>
