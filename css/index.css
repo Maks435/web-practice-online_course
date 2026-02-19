@@ -1,3 +1,5 @@
 @import "global.css";
 @import "global.header-nav.partial.css";
-@import "global.header-hero.partial.css";
+@import "index.header-hero.partial.css";
+@import "index.modules.partial.css";
+@import "index.modules-carousel.partial.css";

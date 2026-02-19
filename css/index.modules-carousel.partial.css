@@ -1,0 +1,78 @@
+.modules-carousel {
+  max-width: 1250px;
+  position: relative;
+  margin: auto;
+  padding: 0px 24px 40px 24px;
+  .modules-carousel__button {
+    position: absolute;
+    top: 50%;
+    background-color: var(--main-text-color);
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10;
+  }
+  .modules-carousel__button:hover {
+    background-color: var(--background-color);
+  }
+  .modules-carousel__button--prev {
+    left: 10px;
+  }
+  .modules-carousel__button--next {
+    right: 10px;
+  }
+  .modules-carousel__slides {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch;
+    .modules__card {
+      min-width: 250px;
+      .modules__card-image {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .modules__card-title {
+        font-size: 24px;
+        color: var(--main-text-color);
+        font-family: "Comfortaa", "sans-serif";
+        margin-bottom: 20px;
+      }
+      .modules__card-description {
+        font-size: 17px;
+        color: var(--second-text-color);
+        font-family: "Gothic A1", "sans-serif";
+      }
+      .modules__card-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        .modules__card-list-item {
+          font-size: 14px;
+          display: flex;
+          align-items: flex-start;
+          font-family: "Gothic A1", "sans-serif";
+          color: var(--second-text-color);
+          margin-bottom: 10px;
+          .modules__card-list-icon {
+            content: "";
+            display: inline-block;
+            width: 8px; /* Ширина риски */
+            height: 2px; /* Товщина риски */
+            background-color: var(--text-accent-color); /* Помаранчевий колір */
+            margin-right: 8px; /* Відступ від риски до тексту */
+            margin-top: 0.6em; /* Вирівнювання риски по висоті тексту */
+            flex-shrink: 0; /* Щоб риска не стискалася */
+          }
+        }
+      }
+    }
+  }
+}
