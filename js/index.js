@@ -1,6 +1,7 @@
 function init() {
   import("./global.header-burger.js");
   import("./index.modules-carousel.partial.js");
+  import("./index.timer.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(

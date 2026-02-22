@@ -1,0 +1,46 @@
+[
+  {
+    "image": "img/module-1.png",
+    "alt": "Module 1 Image",
+    "title": "Module 1",
+    "description": "Lay the groundwork with powerful principles and proven methods that set you up for lasting momentum.",
+    "items": [
+      "Discover core habits that drive long-term success;",
+      "Identify and eliminate hidden obstacles early;",
+      "Build a mindset that fuels progress and resilience."
+    ]
+  },
+  {
+    "image": "img/module-2.png",
+    "alt": "Module 2 Image",
+    "title": "Module 2",
+    "description": "Get clear on where you're headed and craft an intentional plan to move forward with purpose and confidence.",
+    "items": [
+      "Define your big-picture goals and priorities;",
+      "Create a simple roadmap tailored to your strengths;",
+      "Set milestones to keep you focused and motivated."
+    ]
+  },
+  {
+    "image": "img/module-3.png",
+    "alt": "Module 3 Image",
+    "title": "Module 3",
+    "description": "Shape your ideas, services, or products into something valuable, impactful, and aligned with your goals.",
+    "items": [
+      "Clarify the unique value you bring to the table;",
+      "Package your skills, or services effectively;",
+      "Position yourself in a way to attract your audience."
+    ]
+  },
+  {
+    "image": "img/module-4.png",
+    "alt": "Module 4 Image",
+    "title": "Module 4",
+    "description": "Discover simple, scalable systems that save you time, reduce stress, and keep you moving consistently.",
+    "items": [
+      "Streamline daily processes to eliminate overwhelm;",
+      "Set up workflows that fit your personal style;",
+      "Use simple tools to stay organized and efficient."
+    ]
+  }
+]

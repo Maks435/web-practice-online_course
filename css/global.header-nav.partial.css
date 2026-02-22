@@ -57,6 +57,9 @@
           font-family: "Gothic A1", "sans-serif";
           color: var(--main-text-color);
           margin: auto;
+          &:hover { /* & для псевдокласу hover */
+            color: var(--text-accent-color);
+          }
         }
       }
     }
