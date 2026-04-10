@@ -1,0 +1,114 @@
+.questions {
+  padding: 60px 24px;
+}
+
+.questions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.questions__item {
+  background-color: var(--questions-color);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.questions__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 26px 26px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.questions__toggle:focus-visible {
+  outline: 2px solid var(--text-accent-color);
+  outline-offset: 3px;
+}
+
+.questions__question {
+  font-family: "Comfortaa", "sans-serif";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.questions__icon {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  position: relative;
+}
+
+.questions__icon-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background-color: var(--second-text-color);
+  transform: translate(-50%, -50%);
+  transition: transform 180ms ease;
+}
+
+.questions__icon-line--vertical {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.questions__panel {
+  height: 0;
+  overflow: hidden;
+  transition: height 260ms ease;
+  will-change: height;
+}
+
+.questions__panel-inner {
+  padding: 0 26px 24px 26px;
+}
+
+.questions__answer {
+  font-family: "Gothic A1", "sans-serif";
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--second-text-color);
+  max-width: 880px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .questions__panel {
+    transition: none;
+  }
+}
+
+.questions__item.is-open .questions__icon-line--vertical {
+  transform: translate(-50%, -50%) rotate(90deg) scaleX(0);
+}
+
+@media (min-width: 768px) {
+  .questions {
+    padding: 80px 24px;
+  }
+
+  .questions__question {
+    font-size: 30px;
+  }
+
+  .questions__answer {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .questions__question {
+    font-size: 34px;
+  }
+}

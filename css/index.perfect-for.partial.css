@@ -1,0 +1,96 @@
+.perfect-for__grid {
+  display: grid;
+  grid-template-columns: 1 fr;
+  gap: 20px;
+  @media (min-width: 426px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 820px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.perfect-for {
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0px 24px;
+}
+
+.perfect-for__title {
+  font-size: 12px;
+  font-family: "Gothic A1", sans-serif;
+  margin-bottom: 30px;
+  color: var(--fourth-text-color);
+  letter-spacing: 3px;
+}
+
+.card {
+  background-color: var(--questions-color); /* Темний фон */
+  color: var(--main-text-color); /* Білий текст на темному фоні */
+  padding: 25px;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card__title {
+  font-size: 24px;
+  font-family: "Comfortaa", sans-serif;
+  margin: 30px 0px 12px;
+  color: var(--main-text-color);
+  @media (min-width: 820px) {
+    font-size: 28px;
+  }
+}
+
+.card__title::after {
+  color: var(--third-text-color);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 14px;
+  background-color: currentColor;
+  border-radius: 999px;
+}
+
+.card__description {
+  font-size: 17px;
+  font-family: "Gothic A1", sans-serif;
+  color: var(--second-text-color);
+  margin-bottom: 30px;
+  @media (min-width: 820px) {
+    font-size: 17px;
+  }
+}
+
+.card__icon {
+  color: var(--text-accent-color);
+}
+
+/* Клас, який ми додаємо через JS, якщо isHighlighted: true */
+.card--orange {
+  background-color: var(--text-accent-color); /* Помаранчевий фон */
+}
+
+.card__number {
+  font-size: 12px;
+  font-family: "Gothic A1", sans-serif;
+  color: var(--text-accent-color); /* Помаранчеві цифри на темному фоні */
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.card--orange .card__number {
+  color: var(--main-text-color); /* Білі цифри на помаранчевому фоні */
+}
+
+.card--orange .card__icon {
+  color: var(--main-text-color); /* Білі цифри на помаранчевому фоні */
+}
+
+.card__icon {
+  font-size: 20px;
+}

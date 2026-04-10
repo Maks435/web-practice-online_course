@@ -1,0 +1,110 @@
+<div id="shopping-cart-modal" class="order-modal">
+  <div class="order-modal__content">
+    <div class="order-modal__header">
+      <h2 class="order-modal__title">Shopping cart</h2>
+      <button class="order-modal__close" aria-label="Close">&times;</button>
+    </div>
+
+    <div class="order-modal__cart">
+      <p class="order-modal__section-title">Products</p>
+
+      <div class="order-modal__product">
+        <img
+          src="img/modal.png"
+          alt="Product"
+          class="order-modal__product-image"
+        />
+
+        <div class="order-modal__product-info">
+          <p class="order-modal__product-name">Personal Growth Course...</p>
+          <!-- <div class="order-modal__product-details"> -->
+          <span class="order-modal__product-price">$59.99USD</span>
+          <span class="order-modal__product-quantity">1x</span>
+          <!-- </div> -->
+        </div>
+
+        <button class="order-modal__delete-btn" aria-label="Remove item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+
+      <a href="#" class="order-modal__promo-link">Promo code</a>
+      <p class="order-modal__total">Total: <span>$59.99USD</span></p>
+    </div>
+
+    <form class="order-modal__form" id="order-form">
+      <p class="order-modal__section-title">Place an order</p>
+
+      <div class="order-modal__field">
+        <label for="order-name" class="order-modal__label">
+          Name <span class="order-modal__required">*</span>
+        </label>
+        <input
+          type="text"
+          id="order-name"
+          name="name"
+          class="order-modal__input"
+          placeholder="Your name"
+          required
+        />
+      </div>
+
+      <div class="order-modal__field">
+        <label for="order-email" class="order-modal__label">
+          Email <span class="order-modal__required">*</span>
+        </label>
+        <input
+          type="email"
+          id="order-email"
+          name="email"
+          class="order-modal__input"
+          placeholder="Your email address"
+          required
+        />
+      </div>
+
+      <div class="order-modal__field">
+        <label for="order-phone" class="order-modal__label">Phone</label>
+        <input
+          type="tel"
+          id="order-phone"
+          name="phone"
+          class="order-modal__input"
+          placeholder="Your phone"
+        />
+      </div>
+
+      <div class="order-modal__field">
+        <label for="order-comment" class="order-modal__label">Comment</label>
+        <textarea
+          id="order-comment"
+          name="comment"
+          class="order-modal__input order-modal__input--textarea"
+          placeholder="Your comment"
+        ></textarea>
+      </div>
+
+      <div class="order-modal__actions">
+        <button type="submit" class="order-modal__submit-btn">
+          Get instant Access
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,7 +1,10 @@
 @import "global.css";
 @import "global.header-nav.partial.css";
 @import "index.header-hero.partial.css";
+@import "index.perfect-for.partial.css";
 @import "index.modules.partial.css";
 @import "index.modules-carousel.partial.css";
 @import "index.timer.partial.css";
 @import "index.bonus.partial.css";
+@import "index.questions-list.partial.css";
+@import "index.order-modal.partial.css";

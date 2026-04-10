@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01.",
+    "title": "Aspiring Educators",
+    "description": "You're ready to share your knowledge with the world and build a platform that makes an impact.",
+    "isHighlighted": false
+  },
+  {
+    "id": "02.",
+    "title": "Course Creators",
+    "description": "You want a flexible space to launch, grow, and sell your online classes and educational programs.",
+    "isHighlighted": false
+  },
+  {
+    "id": "03.",
+    "title": "Passionate Experts",
+    "description": "You have skills, talents, or experience to teach — and now you need a professional way to present them.",
+    "isHighlighted": true
+  },
+  {
+    "id": "04.",
+    "title": "Business Builders",
+    "description": "You see education as a way to expand your brand, reach more people, and create new income streams.",
+    "isHighlighted": true
+  },
+  {
+    "id": "05.",
+    "title": "Community Leaders",
+    "description": "You want to inspire, guide, and support your audience through accessible, engaging online learning.",
+    "isHighlighted": false
+  },
+  {
+    "id": "06.",
+    "title": "Mindset Coaches",
+    "description": "You’re ready to turn your passion for helping others into a structured offering that changes lives.",
+    "isHighlighted": false
+  }
+]

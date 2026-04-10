@@ -12,12 +12,14 @@
 :root {
   scroll-behavior: smooth;
   --background-color: #191715;
+  --questions-color: #272523;
   --main-text-color: #FFFFFF;
   --second-text-color: #cacaca;
   --third-text-color: #ffffffc7;
   --fourth-text-color: #f5f5f5;
   --text-accent-color: #e46515;
   --border-color: #808080;
+  --star-color: #e41515;
 }
 
 img {

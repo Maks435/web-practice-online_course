@@ -2,6 +2,9 @@ function init() {
   import("./global.header-burger.js");
   import("./index.modules-carousel.partial.js");
   import("./index.timer.partial.js");
+  import("./index.questions-list.partial.js");
+  import("./index.perfect-for.partial.js");
+  import("./index.order-modal.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
